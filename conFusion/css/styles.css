@@ -31,3 +31,6 @@ body{
 .navbar-dark{
     background-color: #492c7a;
 }
+.link_padding{
+    padding: 13px 0px;
+}
