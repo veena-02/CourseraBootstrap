@@ -63,8 +63,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class='col-12 col-sm-6'>
+                <div class='col-8 col-sm-4'>
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class='col-4 col-sm-2'>
+                    <a role="button" href="#reserve_table" class="btn btn-warning">Reserve Table</a>    
                 </div>
             </div>
         </div>
@@ -76,34 +79,134 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class='col col-sm col-md order-sm-first'>
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">
+                            Uthappizza 
+                            <span class="badge badge-danger">HOT</span>
+                            <span class="badge badge-pill badge-secondary">$4.67</span>
+                        </h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
+
+        <div class="row row-content align-items-center">
+            <div class='col-12 col-sm-4 col-md-3 '>
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class='col col-sm col-md '>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img src="img/buffet.png" class="img-thumbnail img-fluid" alt="Buffet">
+                </div>    
+            </div>
+        </div>
 
         <div class="row row-content align-items-center">
             <div class='col-12 col-sm-4 col-md-3 order-sm-last'>
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class='col col-sm col-md order-sm-first'>
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class='col-12 col-sm-4 col-md-3'>
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class='col col-sm col-md'>
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            <div class='col col-sm col-md order-sm-first'>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                            International experience having worked closely with
+                            whos-who in the culinary world, he specializes in
+                            creating mouthwatering Indo-Italian fusion experiences.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-content row">
+            <div class="col-md-8 p-0  card offset-md-2 col-sm-10 offset-sm-1" id="reserve_table">
+                <h2 class="card-header text-white bg-warning ">
+                    Reserve Table
+                </h2>
+                <div class="card-body">
+                    <form class="form"> 
+                        <div class="form-group row">
+                            <label 
+                                class="col-md-2 col-sm-3 col-form-label font-weight-bold"
+                                for="NoOfguests">
+                                Number of Guests
+                            </label>
+                            <div class="col-md-10 col-sm-9">
+                                <div class="row">
+                                    <div class="form-check col-1 ml-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label font-weight-bold font-weight-bold" for="flexRadioDefault1">
+                                            1
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            2
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            3
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            4
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            5
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            6
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-md-2 font-weight-bold">
+                                Date and Time
+                            </label> 
+                            <div class="col-md-3 ">
+                                <input type="text" class="form-control" placeholder="Date">
+                            </div>
+                            <div class="col-md-3 ">
+                                <input type="text" class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <button class="btn btn-info col-md-2  offset-md-2">Reserve</button>
+                        </div>
+                    </form>    
+                </div>
             </div>
         </div>
     </div>
-
+    
     <footer class='footer'>
         <div class='container'>
             <div class='row'>             
