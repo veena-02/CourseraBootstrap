@@ -60,9 +60,105 @@
             </div>
         </div>
     </nav> 
+
+    <div id="reservationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- RESERVE TABLE Modal content-->
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h4 class="modal-title">Reserve Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form"> 
+                        <div class="form-group row">
+                            <label 
+                                class="col-md-2 col-sm-3 col-form-label font-weight-bold"
+                                for="NoOfguests">
+                                Number of Guests
+                            </label>
+                            <div class="col-md-10 col-sm-9">
+                                <div class="row">
+                                    <div class="form-check col-1 ">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label font-weight-bold font-weight-bold" for="flexRadioDefault1">
+                                            1
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            2
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            3
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            4
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            5
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
+                                            6
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label 
+                                class="col-md-2 col-sm-3 col-form-label font-weight-bold"
+                                for="section">
+                                Section
+                            </label>
+                            <div class="col-md-10 col-sm-9">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="option1" checked> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="option2"> Smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label col-md-2 font-weight-bold">
+                                Date and Time
+                            </label> 
+                            <div class="col-md-3 ">
+                                <input type="text" class="form-control" placeholder="Date">
+                            </div>
+                            <div class="col-md-3 ">
+                                <input type="text" class="form-control" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <button type="button" class="btn btn-secondary offset-md-2 " data-dismiss="modal">Cancel</button>
+                            <button class="btn btn-info col-md-2 ml-3">Reserve</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="loginModal" role="dialog" class="modal fade">
         <div class="modal-dialog modal-lg" role="contents">
-            <!-- Modal content-->
+            <!-- LOGIN Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
@@ -107,7 +203,9 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class='col-4 col-sm-2'>
-                    <a role="button" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or Call us at<br><strong>+9876543210</strong>" href="#reserve_table" class="btn btn-warning">Reserve Table</a>    
+                    <a role="button" data-toggle="modal" data-target="#reservationModal" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or Call us at +9876543210" href="#reserve_table" class="btn btn-warning">
+                        Reserve Table
+                    </a>    
                 </div>
             </div>
         </div>
@@ -157,6 +255,12 @@
                         <li data-target="#mycarousel" data-slide-to="1"></li>
                         <li data-target="#mycarousel" data-slide-to="2"></li>
                     </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -219,79 +323,6 @@
                             creating mouthwatering Indo-Italian fusion experiences.
                             </p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row-content row">
-
-            <div class="col-md-8 p-0  card offset-md-2 col-sm-10 offset-sm-1" id="reserve_table">
-                <h2 class="card-header text-white bg-warning ">
-                    Reserve Table
-                </h2>
-                <div class="card-body">
-                    <form class="form"> 
-                        <div class="form-group row">
-                            <label 
-                                class="col-md-2 col-sm-3 col-form-label font-weight-bold"
-                                for="NoOfguests">
-                                Number of Guests
-                            </label>
-                            <div class="col-md-10 col-sm-9">
-                                <div class="row">
-                                    <div class="form-check col-1 ml-3">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label font-weight-bold font-weight-bold" for="flexRadioDefault1">
-                                            1
-                                        </label>
-                                    </div>
-                                    <div class="form-check col-1">
-                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
-                                            2
-                                        </label>
-                                    </div>
-                                    <div class="form-check col-1">
-                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
-                                            3
-                                        </label>
-                                    </div>
-                                    <div class="form-check col-1">
-                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
-                                            4
-                                        </label>
-                                    </div>
-                                    <div class="form-check col-1">
-                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
-                                            5
-                                        </label>
-                                    </div>
-                                    <div class="form-check col-1">
-                                        <input class="form-check-input mr-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                        <label class="form-check-label font-weight-bold" for="flexRadioDefault2">
-                                            6
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-form-label col-md-2 font-weight-bold">
-                                Date and Time
-                            </label> 
-                            <div class="col-md-3 ">
-                                <input type="text" class="form-control" placeholder="Date">
-                            </div>
-                            <div class="col-md-3 ">
-                                <input type="text" class="form-control" placeholder="Time">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <button class="btn btn-info col-md-2  offset-md-2">Reserve</button>
-                        </div>
-                    </form>    
                 </div>
             </div>
         </div>
